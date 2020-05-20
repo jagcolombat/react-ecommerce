@@ -47,7 +47,7 @@ const productReducer= (state = initState,action)=>{
             break;
         case GET_ITEMS:
             let items = action.payload.map(item => {
-                console.log('GET_ITEMS', item);
+                //console.log('GET_ITEMS', item);
                 item.picture = images.find(img => img.id === item.picture).payload;
             });
             return {

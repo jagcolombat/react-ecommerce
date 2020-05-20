@@ -4,8 +4,8 @@ import { addToCart } from '../actions/cartActions'
 import { getItems } from "../actions/productAction";
 import Product from "./Product";
 
- class Home extends Component{
-
+ class Stock extends Component{
+    
     componentDidMount(){
         this.props.getItems();
     }
@@ -14,7 +14,7 @@ import Product from "./Product";
         //console.log(this.props);
         let itemList = this.props.items.map(item=>{
             return(
-                <Product key={item.id} item={item} shop={true}/>
+                <Product item={item} shop={false}/>
             )
         })
 
@@ -34,9 +34,10 @@ const mapStateToProps = (state)=>{
     }
   }
 const mapDispatchToProps= (dispatch)=>{
+    
     return{
         getItems: ()=>{dispatch(getItems())}
     }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(Home)
+export default connect(mapStateToProps,mapDispatchToProps)(Stock)

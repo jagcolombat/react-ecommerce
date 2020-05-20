@@ -26,7 +26,7 @@ export const editItem=(item)=>{
 export const getItems=()=>{
     return (dispatch, getState) => {
         axios.get('http://localhost:3001/products').then( res => {
-            console.log('getItems', res.data);
+            //console.log('getItems', res.data);
             dispatch({ type: GET_ITEMS, payload: res.data})
         })
     }

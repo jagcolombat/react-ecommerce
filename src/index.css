@@ -36,3 +36,17 @@
 .item-desc{
     align-self:center;
 }
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actions span.btn-floating {
+    position: relative;
+    margin: 2px;
+}
+
+.hidden {
+    display: none;
+}
