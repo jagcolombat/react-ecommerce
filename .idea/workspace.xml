@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27b83372-4d81-44eb-ba6c-2079b082a781" name="Default Changelist" comment="implement feature stock (add, delete and edit products)">
-      <change afterPath="$PROJECT_DIR$/src/components/FormProduct.js" afterDir="false" />
+    <list default="true" id="27b83372-4d81-44eb-ba6c-2079b082a781" name="Default Changelist" comment="base de datos de prueba">
+      <change afterPath="$PROJECT_DIR$/src/db/db-store.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/action-types/product-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/action-types/product-actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/productAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/productAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Stock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Stock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/productReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/productReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,8 +33,8 @@
           <entry key="html" value="2" />
           <entry key="jpg" value="2" />
           <entry key="js" value="64" />
-          <entry key="json" value="6" />
-          <entry key="md" value="2" />
+          <entry key="json" value="7" />
+          <entry key="md" value="3" />
           <entry key="ts" value="4" />
         </counts>
       </usages-collector>
@@ -51,9 +43,9 @@
           <entry key="CSS" value="8" />
           <entry key="HTML" value="2" />
           <entry key="Image" value="2" />
-          <entry key="JSON" value="6" />
+          <entry key="JSON" value="7" />
           <entry key="JavaScript" value="63" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="Scratch" value="1" />
           <entry key="TypeScript" value="4" />
         </counts>
@@ -64,7 +56,8 @@
           <entry key="html" value="42" />
           <entry key="js" value="4766" />
           <entry key="json" value="78" />
-          <entry key="txt" value="254" />
+          <entry key="md" value="306" />
+          <entry key="txt" value="278" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -73,7 +66,7 @@
           <entry key="HTML" value="42" />
           <entry key="JSON" value="78" />
           <entry key="JavaScript" value="4766" />
-          <entry key="PLAIN_TEXT" value="254" />
+          <entry key="PLAIN_TEXT" value="584" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -97,13 +90,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/productReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-118">
+            <state relative-caret-position="55">
               <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/db/db-store.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -111,27 +109,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-848">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-630">
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -159,6 +136,15 @@
               <folding>
                 <element signature="e#52#88#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -221,7 +207,6 @@
         <option value="$PROJECT_DIR$/src/components/actions/action-types/product-actions.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/actions/productAction.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/reducers/otherReducer.js" />
         <option value="$PROJECT_DIR$/src/components/reducers/index.js" />
@@ -246,6 +231,7 @@
         <option value="$PROJECT_DIR$/src/components/Product.js" />
         <option value="$PROJECT_DIR$/src/components/FormProduct.js" />
         <option value="$PROJECT_DIR$/src/reducers/productReducer.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -286,49 +272,13 @@
             <path>
               <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopping-Cart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Shopping-Cart" type="b2602c69:ProjectViewProjectNode" />
@@ -351,6 +301,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Trabajo\Projects\React\react-apps\React-Shopping-Cart\Shopping-Cart\src\db" />
       <recent name="D:\Trabajo\Projects\React\react-apps\React-Shopping-Cart\Shopping-Cart\src\actions" />
       <recent name="D:\Trabajo\Projects\React\react-apps\React-Shopping-Cart\Shopping-Cart\src\components" />
       <recent name="D:\Trabajo\Projects\React\react-apps\React-Shopping-Cart\Shopping-Cart\src\components\actions\action-types" />
@@ -402,7 +353,7 @@
       <workItem from="1589814324107" duration="3812000" />
       <workItem from="1589833572729" duration="4142000" />
       <workItem from="1589844004777" duration="34102000" />
-      <workItem from="1589952551622" duration="69166000" />
+      <workItem from="1589952551622" duration="70649000" />
     </task>
     <task id="LOCAL-00001" summary="remove comment">
       <created>1589943639085</created>
@@ -425,11 +376,18 @@
       <option name="project" value="LOCAL" />
       <updated>1589963603020</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implement feature stock (add, delete and edit products)">
+      <created>1590387646351</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590387646351</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111222000" />
+    <option name="totallyTimeSpent" value="112705000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -458,7 +416,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.46972176" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.64320785" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29459903" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -501,7 +459,8 @@
     <MESSAGE value="remove comment" />
     <MESSAGE value="tag version 0.1.0" />
     <MESSAGE value="create stock component for CRUD operation over products&#10;create product component for reuse it on home and stock component" />
-    <option name="LAST_COMMIT_MESSAGE" value="create stock component for CRUD operation over products&#10;create product component for reuse it on home and stock component" />
+    <MESSAGE value="implement feature stock (add, delete and edit products)" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement feature stock (add, delete and edit products)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/material-icons/icons.css" />
@@ -543,13 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="60" selection-start-column="60" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -738,8 +690,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/productReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
+        <state relative-caret-position="55">
           <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/db-store.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,103 @@
+{
+  "products": [
+    {
+      "name": "Winter body",
+      "price": "100",
+      "dept": 0,
+      "subdept": 0,
+      "picture": "1",
+      "id": 1
+    },
+    {
+      "name": "Adidas",
+      "price": "90",
+      "dept": 0,
+      "subdept": 0,
+      "picture": "2",
+      "id": 2
+    },
+    {
+      "name": "Vans",
+      "price": "125",
+      "dept": 0,
+      "subdept": 0,
+      "picture": "3",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "White",
+      "price": 260,
+      "dept": 1,
+      "subdept": 1,
+      "picture": "4"
+    },
+    {
+      "id": 5,
+      "name": "Cropped-sho",
+      "price": 90,
+      "dept": 1,
+      "subdept": 2,
+      "picture": "5"
+    },
+    {
+      "id": 6,
+      "name": "Blues",
+      "price": 160,
+      "dept": 1,
+      "subdept": 3,
+      "picture": "6"
+    },
+    {
+      "id": 7,
+      "name": "Pizza",
+      "price": 5,
+      "dept": 2,
+      "subdept": 0,
+      "picture": "7"
+    },
+    {
+      "id": 8,
+      "name": "Cake",
+      "price": 3,
+      "dept": 2,
+      "subdept": 0,
+      "picture": "8"
+    },
+    {
+      "name": "Salad",
+      "price": "10",
+      "dept": 0,
+      "subdept": 0,
+      "picture": "0",
+      "id": 9
+    }
+  ],
+  "dept": [
+    {
+      "id": 1,
+      "name": "Shoes"
+    },
+    {
+      "id": 2,
+      "name": "Food"
+    }
+  ],
+  "subdept": [
+    {
+      "id": 1,
+      "name": "White",
+      "dept": 1
+    },
+    {
+      "id": 2,
+      "name": "Brown",
+      "dept": 1
+    },
+    {
+      "id": 3,
+      "name": "Black",
+      "dept": 1
+    }
+  ]
+}
