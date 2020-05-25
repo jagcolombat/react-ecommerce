@@ -50,3 +50,15 @@
 .hidden {
     display: none;
 }
+/*Add product*/
+.col-6 {
+    margin: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card.form-product {
+    width: 500px;
+}

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import { addToCart } from '../actions/cartActions'
+import { connect } from 'react-redux';
 import { getItems } from "../actions/productAction";
 import Product from "./Product";
 
@@ -11,18 +10,15 @@ import Product from "./Product";
     }
 
     render(){
-        //console.log(this.props);
-        let itemList = this.props.items.map(item=>{
-            return(
-                <Product key={item.id} item={item} shop={true}/>
-            )
-        })
-
+        console.log(this.props);
+        let itemList = this.props.items
         return(
             <div className="container">
-                <h3 className="center">Products</h3>
+                <h5 className="center">Products</h5>
                 <div className="box">
-                    {itemList}
+                    {itemList.map(item => (
+                        <Product key={item.id} item={item} shop={true}/>
+                    ))}
                 </div>
             </div>
         )

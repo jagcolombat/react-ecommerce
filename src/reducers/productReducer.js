@@ -1,55 +1,46 @@
-import Item1 from '../images/item1.jpg'
-import Item2 from '../images/item2.jpg'
-import Item3 from '../images/item3.jpg'
-import Item4 from '../images/item4.jpg'
-import Item5 from '../images/item5.jpg'
-import Item6 from '../images/item6.jpg'
-import Item7 from '../images/item7.jpg'
-import Item8 from '../images/item8.jpg'
-import {ADD_ITEM, GET_ITEMS, REMOVE_ITEM} from "../actions/action-types/product-actions";
+
+import {ADD_ITEM, EDIT_ITEM, GET_ITEMS, GET_ITEM, REMOVE_ITEM} from "../actions/action-types/product-actions";
 
 const initState = {
-    items: []
+    items: [],
+    item: null
 }
-const images = [
-    {id: "1", payload: Item1},
-    {id: "2", payload: Item2},
-    {id: "3", payload: Item3},
-    {id: "4", payload: Item4},
-    {id: "5", payload: Item5},
-    {id: "6", payload: Item6},
-    {id: "7", payload: Item7},
-    {id: "8", payload: Item8}
-    ];
 
-const productReducer= (state = initState,action)=>{
+
+const productReducer= (state = initState, action)=>{
 
     switch(action.type){
         case ADD_ITEM:
-            let addedItem = state.items.find(item=> item.id === action.payload.id || item.name === action.payload.name);
+            let addedItem = state.items.find(item=> item.price === action.payload.price && item.name === action.payload.name);
             if(!addedItem)
             {
-                let new_items = state.items.push(action.payload);
-                return{
+                return {
                     ...state,
-                    items: new_items
+                    items: [...state.items, action.payload]
                 }
+            } else {
+                return state;
             }
-            break;
         case REMOVE_ITEM:
-            let itemToRemove= state.items.find(item=> action.id === item.id);
-            let new_items = state.items.filter(item=> action.id !== item.id);
-            console.log(itemToRemove);
+            console.log(action);
             return{
                 ...state,
-                items: new_items
+                items: state.items.filter(item => item.id !== action.payload)
             }
-            break;
+        case EDIT_ITEM:
+            console.log('EDIT_ITEM', action);
+            return {
+                ...state,
+                items: state.items.map(item =>
+                    item.id === action.payload.id ? (item = action.payload) : item
+                )
+            }
+        case GET_ITEM:
+            return {
+                ...state,
+                item: action.payload
+            }
         case GET_ITEMS:
-            let items = action.payload.map(item => {
-                //console.log('GET_ITEMS', item);
-                item.picture = images.find(img => img.id === item.picture).payload;
-            });
             return {
                 ...state,
                 items: action.payload

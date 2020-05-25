@@ -4,14 +4,30 @@ import { addToCart } from '../actions/cartActions'
 import { getItems } from "../actions/productAction";
 import { removeItem } from "../actions/productAction";
 import { editItem } from "../actions/productAction";
+import Item0 from '../images/item0.jpg'
+import Item1 from '../images/item1.jpg'
+import Item2 from '../images/item2.jpg'
+import Item3 from '../images/item3.jpg'
+import Item4 from '../images/item4.jpg'
+import Item5 from '../images/item5.jpg'
+import Item6 from '../images/item6.jpg'
+import Item7 from '../images/item7.jpg'
+import Item8 from '../images/item8.jpg'
+const images = [
+    {id: "0", payload: Item0},
+    {id: "1", payload: Item1},
+    {id: "2", payload: Item2},
+    {id: "3", payload: Item3},
+    {id: "4", payload: Item4},
+    {id: "5", payload: Item5},
+    {id: "6", payload: Item6},
+    {id: "7", payload: Item7},
+    {id: "8", payload: Item8}
+];
 
 class Product extends Component{
 
     shop;
-
-    constructor(props){
-        super(props)
-    }
 
     handleAddToCart = (id)=>{
         let add2CartItem = this.props.items.find(item=> item.id === id)
@@ -23,12 +39,7 @@ class Product extends Component{
     }
     handleEditProd = (id)=>{
         let editItem = this.props.items.find(item=> item.id === id)
-        this.props.editProd(editItem);
-    }
-
-
-    componentDidMount(){
-        this.props.getItems();
+        this.props.edit(editItem);
     }
 
     render(){
@@ -36,6 +47,8 @@ class Product extends Component{
         //let itemList = this.props.items.map(item=>{
         let item = this.props.item;
         let shop = this.props.shop;
+        let picture = images.find(img => img.id === item.picture);
+        if(picture) item.picture = picture.payload;
         return(
             <div className="card" key={item.id}>
                 <div className="card-image">
@@ -53,22 +66,11 @@ class Product extends Component{
                 </div>
 
                 <div className="card-content">
-                    <p>{item.desc}</p>
-                    <p><b>Price: {item.price}$</b></p>
+                    <p><b>Price: $ {item.price}</b></p>
                 </div>
             </div>
 
         )
-        //})
-
-        /*return(
-            <div className="container">
-                <h3 className="center">Products</h3>
-                <div className="box">
-                    {itemList}
-                </div>
-            </div>
-        )*/
     }
 }
 const mapStateToProps = (state)=>{
